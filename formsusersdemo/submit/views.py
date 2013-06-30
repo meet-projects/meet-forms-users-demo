@@ -13,4 +13,5 @@ def submitlogin(request):
 	return HttpResponseRedirect('profile')
 
 def profile(request):
-	return render(request, 'submit/profile.html', {})
+	context = {'username': 'Kyle'}
+	return render(request, 'submit/profile.html', context)
