@@ -1,10 +1,13 @@
 from django.conf.urls import patterns, include, url
-
+from submit import views
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^login$', views.login),
+	url(r'^submitlogin$', views.submitlogin),
+	url(r'^profile$', views.profile),
     # Examples:
     # url(r'^$', 'formsusersdemo.views.home', name='home'),
     # url(r'^formsusersdemo/', include('formsusersdemo.foo.urls')),
