@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    {% block headers %}
+
+    {% endblock %}
+    </head>
+    <body>
+    <!-- Any common code goes here -->
+    Hooray common code!
+    <hr>
+    {% block content %}
+    <!-- Any unique code goes here -->
+    {% endblock %}
+  </body>
+</html>

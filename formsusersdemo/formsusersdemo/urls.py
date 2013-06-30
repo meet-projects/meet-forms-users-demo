@@ -5,9 +5,10 @@ from submit import views
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^login$', views.login),
+	url(r'^login', views.login_form),
 	url(r'^submitlogin$', views.submitlogin),
 	url(r'^profile$', views.profile),
+	url(r'^register$', views.register),
     # Examples:
     # url(r'^$', 'formsusersdemo.views.home', name='home'),
     # url(r'^formsusersdemo/', include('formsusersdemo.foo.urls')),

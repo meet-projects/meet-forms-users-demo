@@ -1,3 +1,7 @@
+{% extends 'submit/base.html' %}
+
+{% block content %}
+
 <h1>User Login Form</h1>
 
 <form action="submitlogin" method="post">
@@ -6,3 +10,4 @@
     Password: <input type="password" name="password" id="password" /><br>
 <input type="submit" value="Login" />
 </form>
+{% endblock %}
